@@ -12,7 +12,10 @@ def suma(num1,num2):
 def resta(num1,num2):
     a = isinstance(num1, int)
     b = isinstance(num2, int)
-    if not a or not b ==False:
+    
+    print(a,b)
+    
+    if not a or not b:
         raise TypeError("Variable no es un número")
 
     x = num1-num2
@@ -21,7 +24,8 @@ def resta(num1,num2):
 def producto(num1,num2):
     a = isinstance(num1, int)
     b = isinstance(num2, int)
-    if not a or not b ==False:
+    print(a,b)
+    if not a or not b:
         raise TypeError("Variable no es un número")
 
     x = num1*num2
@@ -29,10 +33,10 @@ def producto(num1,num2):
 
     
 
-def división(num1,num2):
+def division(num1,num2):
     a = isinstance(num1, int)
     b = isinstance(num2, int)
-    if not a or not b ==False:
+    if not a or not b:
         raise TypeError("Variable no es un número")
 
     if num2==0:
